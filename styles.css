@@ -2,9 +2,12 @@
     --themeColor: rgb(83, 143, 254);
 }
 
-
 *{
     box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
 }
 
 .container{
@@ -13,7 +16,6 @@
     grid-template-columns: 240px 1fr;
     width: 100vw;
     height: 100vh;
-    margin: -10px;
 }
 
 .side-menu{
@@ -213,6 +215,7 @@
 
 .trending>p, .announcements>p, .your-projects>p{
     font-weight: 700;
+    font-size: 18px;
 }
 
 .image-trending{
@@ -231,7 +234,7 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 25px;
     padding-top: 20px;
     border-radius: 10px;
     width: 16rem;
@@ -245,6 +248,13 @@
     color: black;
     text-decoration: none;
 }
+
+.trending-mention-and-topic{
+    line-height: 5px;
+}
+
+
+
 
 
 /* ANNOUNCEMENT */
@@ -266,4 +276,45 @@
     font-weight: 600;
     margin-bottom: -7.5px;
 
+}
+
+
+
+/* YOUR PROJECTS */
+
+.project-button-icons{
+    height: 21px;
+    width: auto;
+}
+
+.project-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-right: 18px;
+    margin-left: 18px;
+}
+
+.project{
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px 17px 20px 20px;
+    border-left: solid orange 7px;
+}
+
+.project-topic{
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.project-buttons-container{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.project-button-icons:hover{
+    cursor: pointer;
 }
